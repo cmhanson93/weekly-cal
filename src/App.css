@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 .icon {
-  font-family: 'Material Icons', serif;
+  font-family: 'Material Icons', sans-serif;
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
@@ -25,7 +25,7 @@
 /* VARIABLES */
 
 :root {
-  --main-color: #1a8fff;
+  --main-color: #777;
   --text-color: #777;
   --text-color-light: #ccc;
   --border-color: #eee;
@@ -54,7 +54,6 @@ header {
   display: block;
   width: 100%;
   padding: 1.75em 0;
-  border-bottom: 1px solid var(--border-color);
   background: var(--neutral-color);
 }
 
@@ -72,7 +71,7 @@ header #logo .icon {
 main {
   display: block;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 1.5em;
   max-width: 50em;
 }
 
@@ -162,7 +161,7 @@ main {
 
 .calendar .body .cell {
   position: relative;
-  height: 5em;
+  height: 20em;
   border-right: 1px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
@@ -177,7 +176,7 @@ main {
 
 .calendar .body .selected {
   border-left: 10px solid transparent;
-  border-image: linear-gradient(45deg, #1a8fff 0%,#53cbf1 40%);
+  border-image: linear-gradient(45deg, black 0%,lightgrey 40%);
   border-image-slice: 1;
 }
 

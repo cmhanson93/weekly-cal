@@ -11,7 +11,7 @@ class App extends React.Component {
         <header>
           <div id="logo">
             <span>
-              weekly<b>calendar</b>
+              Weekly Calendar
             </span>
           </div>
         </header>
