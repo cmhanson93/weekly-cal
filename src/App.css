@@ -203,6 +203,7 @@ main {
 
 .calendar .body .disabled {
   color: var(--text-color-light);
+  background-color: #f6f6f6;
   pointer-events: none;
 }
 

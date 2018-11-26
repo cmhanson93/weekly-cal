@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Calendar from './Calendar';
+import Calendar from './components/Calendar';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ class App extends React.Component {
         <header>
           <div id="logo">
             <span>
-              Weekly Calendar
+              Weekly Planner
             </span>
           </div>
         </header>

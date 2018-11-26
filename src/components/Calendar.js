@@ -63,7 +63,7 @@ class Calendar extends React.Component {
         days.push(
           <div
             className={`col cell ${
-              !dateFns.isSameWeek(day, startDate)
+              (!dateFns.isSameWeek(day, startDate) || dateFns.isWeekend(day))
               ? "disabled"
               : dateFns.isSameDay(day, selectedDate) ? "selected" : ""
             }`}
