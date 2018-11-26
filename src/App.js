@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Calendar from './components/Calendar';
+import AddReminder from './containers/AddReminder'
 
 import './App.css';
 
@@ -17,6 +18,7 @@ class App extends React.Component {
         </header>
         <main>
           <Calendar />
+          <AddReminder />
         </main>
       </div>
     );
