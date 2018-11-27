@@ -12,7 +12,7 @@ const reminders = (state = [], action) => {
     case 'TOGGLE_REMINDER':
       return state.map(
         reminder =>
-          reminder.id === action.id ? {...reminder, completed: !reminder.completed } : reminder
+          (reminder.id === action.id) ? {...reminder, completed: !reminder.completed} : reminder
       )
     default:
       return state
