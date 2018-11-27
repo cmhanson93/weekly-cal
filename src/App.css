@@ -243,3 +243,13 @@ button {
   flex-basis: calc(100%/7);
   width: calc(100%/7);
 }
+
+.reminder {
+  position: absolute;
+  top: 5.5em;
+  left: 0.25em;
+}
+
+.reminder input {
+  width: 4.5em;
+}

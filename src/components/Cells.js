@@ -1,7 +1,9 @@
 import React from 'react';
 import dateFns from 'date-fns';
+import AddReminder from '../containers/AddReminder';
+import ReminderContainer from '../containers/ReminderContainer';
 
-class Cells extends React.Component {
+class Cells extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -33,15 +35,19 @@ class Cells extends React.Component {
         days.push(
           <div
             className={`col cell ${
-              !dateFns.isSameWeek(day, startDate)
+              (!dateFns.isSameWeek(day, startDate) || dateFns.isWeekend(day))
               ? "disabled"
               : dateFns.isSameDay(day, selectedDate) ? "selected" : ""
             }`}
             key={day}
-            onChange={() => this.handleChange(dateFns.parse(cloneDay))}
+            onDateClick={() => this.handleChange(dateFns.parse(cloneDay))}
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
+            <span className="reminder">
+              <AddReminder />
+              <ReminderContainer />
+            </span>
           </div>
         );
         day = dateFns.addDays(day, 1);

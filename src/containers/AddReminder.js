@@ -18,7 +18,7 @@ const AddReminder = ({ dispatch }) => {
         }}
       >
         <input ref={node => (input = node)} />
-        <button type="submit">Add Reminder</button>
+        <button type="submit">+</button>
       </form>
     </div>
   )

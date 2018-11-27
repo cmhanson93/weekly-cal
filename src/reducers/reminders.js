@@ -2,7 +2,7 @@ const reminders = (state = [], action) => {
   switch (action.type) {
     case 'ADD_REMINDER':
       return [
-        ...state,
+        //...state,
         {
           id: action.id,
           text: action.text,

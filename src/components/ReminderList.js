@@ -5,7 +5,7 @@ import Reminder from './Reminder'
 const ReminderList = ({ reminders, toggleReminder }) => (
   <ul>
     {reminders.map(reminder => (
-      <Reminder key={reminder.id} {...reminder} onClick={() => toggleReminder(reminder.id)} />
+      <Reminder key={reminder.id} text={reminder.text} onClick={() => toggleReminder(reminder.id)} />
     ))}
   </ul>
 )
